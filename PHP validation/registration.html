@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+</head>
+<body>
+
+    <fieldset>
+	<h1 align="center"><b>Registration Form<b></h1>
+		<center><a href="login.php">Already a user?</a></center>
+
+	<form action="RegistrationAction.php" method="post">
+
+
+        <fieldset>
+
+			<legend align="center"><h3>Basic Information</h3></legend>
+
+			<label for="fname">First Name*:</label>
+			<input type="text" name="firstname" id="fname" placeholder="Please write your first name." size="50" autofocus required>
+			<br><br>
+
+			<label for="lname">Last Name*:</label>
+			<input type="text" name="lastname" id="fname" placeholder="Please write your last name." size="50" required>
+			<br><br>
+
+			<label>Gender*:</label>
+			<input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+			<br><br>
+
+			<label>Date of Birth*:</label>
+			<input type="date" id="dob" name="dateofbirth" required>
+			<br><br>
+
+			<label for="religion">Religion*:</label>
+			<select name="religion" id="religion" required>
+				<option value="Islam">Islam</option>
+				<option value="Hinduism">Hinduism</option>
+				<option value="Buddhism">Buddhism</option>
+				<option value="Christianity">Christianity</option>
+				<option value="Other">Other</option>
+			</select>
+			<br><br>
+
+		</fieldset>
+
+
+		<fieldset>
+        	
+			<legend align="center"><h3>Contact Information</h3></legend>
+
+			<label for="presentaddress">Present Address*:</label>
+			<textarea id="presentaddress" name="presentaddress" placeholder="Please write your present address." rows="2" cols="50" required>
+			</textarea>
+			<br><br>
+
+			<label for="permanentaddress">Permanent Address:</label>
+			<textarea id="permanentaddress" name="permanentaddress" placeholder="Please write your permanent address." rows="2" cols="50">
+			</textarea>
+			<br><br>
+
+			<label for="phone">Phone number:</label>
+			<input type="tel" id="phone" name="phone" placeholder="01*********">
+			<br><br>
+
+			<label for="email">Email*:</label>
+			<input type="email" name="email" id="email" placeholder="example123@gmail.com" required>
+			<br><br>
+
+			<label for="weblink">Personal Website Link:</label>
+			<input type="url" id="weblink" name="weblink" placeholder="www.yourwebsitelink.com">
+			<br><br>
+
+		</fieldset>
+
+
+		<fieldset>
+        	
+			<legend align="center"><h3>Credentials</h3></legend>
+
+			<label for="uname">Username*:</label>
+			<input type="text" name="uname" id="uname" placeholder="Your username here" required>
+			<br><br>
+
+			<label for="pwd">Password*:</label>
+			<input type="password" id="pwd" name="pwd" placeholder="Enter Your password here" required>
+			<br><br>
+
+			<label for="conpwd">Confirm Password*:</label>
+			<input type="password" id="conpwd" name="conpwd" placeholder="Confirm your password" required>
+			<br><br>
+
+		</fieldset>
+
+		<input type="reset" name="reset" value="Clear All">
+		<input type="submit" name="submit" value="Submit">
+		</fieldset>
+	</form>
+
+</body>
+</html>
